@@ -6,6 +6,17 @@ module.exports = {
     once: false,
     async execute(member, client) {
         const channel = member.guild.channels.cache.find(chnl => chnl.id === config.channels.welcome);
+        const logChann = member.guild.channels.cache.find(chnl => chnl.id === config.channels.logs);
+
+        if (!channel) {
+            console.error('Welcome channel not found');
+            return;
+        }
+
+        if (!logChann) {
+            console.error('Log channel not found');
+            return;
+        }
 
         const Welcome = new EmbedBuilder()
             .setColor('#5c87dd')
@@ -16,7 +27,6 @@ module.exports = {
         channel.send({ embeds: [Welcome] });
 
         const roleId = config.roles.visitors;
-        const logChann = member.guild.channels.cache.find(chnl => chnl.id === config.channels.logs);
         try {
             await member.roles.add(roleId);
             logChann.send(`Role <@&${roleId}> added to <@${member.user.id}>`);
