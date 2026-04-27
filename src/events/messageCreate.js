@@ -5,6 +5,10 @@ module.exports = {
     name: 'messageCreate',
     once: false,
     async execute(message) {
+        if (message.channel.parentId === config.categories.git_feed) {
+            return;
+        }
+
         function CreateMsg() {
             const logChann = message.guild.channels.cache.get(config.channels.logs);
 
