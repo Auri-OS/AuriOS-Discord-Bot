@@ -24,7 +24,7 @@ module.exports = {
             .setDescription(`👋 Welcome to the server ${member} !` )
             .setThumbnail('https://raw.githubusercontent.com/Auri-OS/auri-os.github.io/refs/heads/main/Logo.png')
             
-        channel.send(`Please read the rules in <#${config.channels.rules}> before participating.`);
+        channel.send(`${member} Please read the rules in <#${config.channels.rules}> before participating.`);
             
         channel.send({ embeds: [Welcome] });
 
