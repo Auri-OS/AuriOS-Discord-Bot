@@ -1,0 +1,21 @@
+{
+	"categories" : {
+		"git_feed" : "1498310652987441272"
+	},
+	
+	"channels": {
+		"logs" : "1498313481395634347",
+		"welcome" : "1165921210031419453"
+	},
+
+	"roles": {
+		"visitors" : "1498306205008007228",
+		"contributor" : "1498306159080374292"
+	},
+
+	"client": {
+		"id" : "1173291523497021460",
+		"picture" : "https://avatars.githubusercontent.com/u/231211427?s=200&v=4",
+		"username" : "AuriOS"
+	}
+}

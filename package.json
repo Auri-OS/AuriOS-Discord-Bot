@@ -1,0 +1,15 @@
+{
+  "name": "aurios-bot",
+  "module": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "discord.js": "^14.26.3",
+    "dotenv": "^17.4.2"
+  }
+}
