@@ -32,7 +32,7 @@ module.exports = {
 			
             
         ]
-          
+        
         setInterval(()=> {
             let random = Math.floor(Math.random() * status.length)
             client.user.setActivity(status[random], {

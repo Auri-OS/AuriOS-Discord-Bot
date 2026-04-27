@@ -5,7 +5,6 @@ module.exports = {
     name: 'messageDelete',
     once: false,
     async execute(message) {
-        // Ignore messages from git_feed category
         if (message.channel.parentId === config.categories.git_feed) {
             return;
         }

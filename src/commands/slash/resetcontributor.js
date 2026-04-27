@@ -25,7 +25,6 @@ module.exports = {
             return;
         }
 
-        // Create confirmation buttons
         const confirmButton = new ButtonBuilder()
             .setCustomId('confirm-reset')
             .setLabel('Yes, remove it')

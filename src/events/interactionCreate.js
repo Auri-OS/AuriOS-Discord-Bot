@@ -40,7 +40,6 @@ module.exports = {
     name: 'interactionCreate',
     once: false,
     async execute(interaction, client) {
-        // Handle button interactions
         if (interaction.isButton()) {
             if (interaction.customId === 'confirm-reset') {
                 const contributorRole = interaction.guild.roles.cache.get(config.roles.contributor);

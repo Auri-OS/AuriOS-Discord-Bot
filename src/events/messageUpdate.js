@@ -5,7 +5,6 @@ module.exports = {
 	name: "messageUpdate",
 	once: false, 
 	async execute(oldMessage, newMessage, message, client) {
-        // Ignore messages from git_feed category
         if (oldMessage.channel.parentId === config.categories.git_feed) {
             return;
         }
